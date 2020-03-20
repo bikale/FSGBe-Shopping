@@ -20,7 +20,6 @@ exports.getAllProducts = async (req, res, next) => {
 // @access    Public
 
 exports.addToCart = async (req, res, next) => {
-
   const productId = req.body.id;
 
   const id = req.user._id; // Get current user id
@@ -120,7 +119,7 @@ exports.placeOrder = async (req, res, next) => {
     }
   });
   await User.updateOne({ _id: ObjectId(id) }, { $set: { 'cart.items': [] } });
-  res.redirect('/');
+  res.redirect('/user/orderhistory');
 };
 
 // @desc      Get order history

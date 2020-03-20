@@ -19,7 +19,6 @@ const rateLimit = require('express-rate-limit');
 const hpp = require('hpp');
 const cors = require('cors');
 
-
 const adminRoute = require('./route/admin');
 const userRoute = require('./route/user');
 const authRoute = require('./route/auth');
@@ -72,7 +71,7 @@ app.use(compression());
 
 // Rate limiting
 const limiter = rateLimit({
-  windowMs: 10 * 60 * 1000, // 100 request per minute 10 min
+  windowMs: 10 * 60 * 1000, // 100 request per 10 min
   max: 100
 });
 app.use(limiter);

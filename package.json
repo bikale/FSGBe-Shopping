@@ -1,10 +1,10 @@
 {
-  "name": "onlineshopping",
-  "version": "2.0.1",
+  "name": "fsgb-eshopping",
+  "version": "3.0.1",
   "description": "online shopping API",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV = production & node app",
+    "start": "set NODE_ENV = production & node app",
     "dev": "nodemon app"
   },
   "author": "Frehiwot T Shawn D Getaneh T Bikale A",
