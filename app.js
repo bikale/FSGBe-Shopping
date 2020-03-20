@@ -15,6 +15,10 @@ const compression = require('compression');
 const morgan = require('morgan');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const rateLimit = require('express-rate-limit');
+const hpp = require('hpp');
+const cors = require('cors');
+
 
 const adminRoute = require('./route/admin');
 const userRoute = require('./route/user');
@@ -65,6 +69,19 @@ app.use(xss());
 
 //Compression the api file
 app.use(compression());
+
+// Rate limiting
+const limiter = rateLimit({
+  windowMs: 10 * 60 * 1000, // 100 request per minute 10 min
+  max: 100
+});
+app.use(limiter);
+
+//Prevent http param pollution
+app.use(hpp());
+
+//Enable CORS
+app.use(cors());
 
 //Set morgan logger middleware
 const accessLogStream = fs.createWriteStream(

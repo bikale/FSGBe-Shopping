@@ -57,6 +57,7 @@ exports.editProduct = async (req, res, next) => {
   res.redirect('/admin');
 };
 
+
 // @desc      delete products item
 // @route     POST admin/deleteProduct
 // @access    Private

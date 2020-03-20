@@ -116,7 +116,7 @@ exports.loginAuthenticate = async (req, res, next) => {
     .redirect(redirectPage);
 };
 
-// @desc      Log user out / clear cookie
+// @desc      Log user out/ clear cookie
 // @route     GET  /logout
 // @access    Private
 exports.logout = async (req, res, next) => {

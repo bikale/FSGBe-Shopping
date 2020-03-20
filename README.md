@@ -1,8 +1,8 @@
 # FSGB e-shopping
 
-> online shopping
+> online shopping [fsgbshop.herokuapp.com/](https://fsgbshop.herokuapp.com/)
 
-## Demo
+## Technology Used
 
 - NodeJs
 - mongoDB

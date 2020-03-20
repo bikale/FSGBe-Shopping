@@ -15,7 +15,6 @@ exports.getAllProducts = async (req, res, next) => {
 
   res.render('user/shop', { products, cartListCount });
 };
-
 // @desc      Add item to the user cart
 // @route     Post /user/addtocart
 // @access    Public
