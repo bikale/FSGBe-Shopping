@@ -1,6 +1,6 @@
 # FSGB onlineShopping
 
-> Mini online shopping 
+> online shopping 
 
 ## Technology Used
 
