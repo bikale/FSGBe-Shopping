@@ -4,14 +4,14 @@
 
 ## Technology Used
 
--- NodeJs
--- mongoDB
--- expressJs
--- ejs layout
+- NodeJs
+- mongoDB
+- expressJs
+- ejs layout
 
 ## Group Members
 
---Frehiwot Tekimicheal
---Shawn Daudi
---Getaneh Taferre
---Bikale Aberra
+- Frehiwot Tekimicheal
+- Shawn Daudi
+- Getaneh Taferre
+- Bikale Aberra
