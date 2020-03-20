@@ -13,6 +13,8 @@ const passport = require('passport');
 const helmet = require('helmet');
 const compression = require('compression');
 const morgan = require('morgan');
+const mongoSanitize = require('express-mongo-sanitize');
+const xss = require('xss-clean');
 
 const adminRoute = require('./route/admin');
 const userRoute = require('./route/user');
@@ -21,7 +23,7 @@ const authRoute = require('./route/auth');
 //load env vars
 dotenv.config({ path: './config/config.env' });
 
-// //Passport config
+// Passport config
 // require('./config/passport')(passport);
 
 const app = express();
@@ -52,8 +54,14 @@ app.use((req, res, next) => {
   next();
 });
 
+// Sanitize data
+app.use(mongoSanitize());
+
 //Set security headers
 app.use(helmet());
+
+//Prevent cross sites attacks
+app.use(xss());
 
 //Compression the api file
 app.use(compression());
