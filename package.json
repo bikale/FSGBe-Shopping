@@ -7,7 +7,7 @@
     "start": "NODE_ENV = production & node app",
     "dev": "nodemon app"
   },
-  "author": "Bikale Aberra",
+  "author": "Frehiwot T Shawn D Getaneh T Bikale A",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",

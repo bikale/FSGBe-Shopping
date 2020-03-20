@@ -1,17 +1,17 @@
-# FSGB onlineShopping
+# FSGB e-shopping
 
-> Mini online shopping 
+> Backend and Frontend API for online shooping application
 
-## Technology Used
+## Demo
 
--- NodeJs
--- mongoDB
--- expressJs
--- ejs layout
+The APP is live at [fsgbshop.herokuapp.com](https://fsgbshop.herokuapp.com/)
 
 ## Group Members
 
 --Frehiwot Tekimicheal
 --Shawn Daudi
---Getaneh Taferre
+--Getaneh Tafere
 --Bikale Aberra
+
+- Version: 3.0.0
+- License: MIT

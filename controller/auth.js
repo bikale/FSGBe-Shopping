@@ -18,10 +18,10 @@ exports.register = async (req, res, next) => {
     errors.push({ msg: 'required input' });
   }
   if (password !== password2) {
-    errors.push({ msg: 'password dose not match ' });
+    errors.push({ msg: 'password does not match ' });
   }
   if (password.length < 6) {
-    errors.push({ msg: 'password shoulb be at least 6 characteer ..' });
+    errors.push({ msg: 'password should be at least 6 characters' });
   }
   if (errors.length > 0) {
     res.render('user/signup', {
@@ -32,7 +32,7 @@ exports.register = async (req, res, next) => {
     User.findOne({ email: email }).then(async user => {
       if (user) {
         //user exists
-        errors.push({ msg: 'email is already registerd' });
+        errors.push({ msg: 'Email Address is Already Registered' });
         res.render('user/signup', {
           errors,
           name,
@@ -66,7 +66,6 @@ exports.login = async (req, res, next) => {
 // @route   Get /loginform
 // @access  Public
 exports.loginForm = async (req, res, next) => {
-
   res.render('user/loginform');
 };
 
