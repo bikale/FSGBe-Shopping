@@ -1,6 +1,6 @@
 # FSGB e-shopping
 
-> online shopping [fsgbshop.herokuapp.com/](https://fsgbshop.herokuapp.com/)
+> FSGB e-shopping [fsgbshop.herokuapp.com/](https://fsgbshop.herokuapp.com/)
 
 ## Technology Used
 
